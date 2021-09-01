@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 
-const Header = () => {
+const Header = ({ navigation }) => {
   return (
     <View style={styles.headerWrapper}>
       <Image
@@ -17,7 +17,9 @@ const Header = () => {
         <TouchableOpacity style={styles.headerIcon}>
           <Ionicons name="heart-outline" size={27} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.headerIcon}>
+        <TouchableOpacity
+          style={styles.headerIcon}
+          onPress={() => navigation.push('DirectMessage')}>
           <Feather name="send" size={27} />
         </TouchableOpacity>
       </View>
