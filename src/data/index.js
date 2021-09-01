@@ -79,4 +79,43 @@ export const feedData = [
   },
 ];
 
+export const dmData = [
+  {
+    id: 1,
+    name: 'Jihan Weeekly',
+    profile_pic: require('../assets/profile/jihan.jpeg'),
+    message: 'Kamu kok ganteng banget sih...',
+  },
+  {
+    id: 2,
+    name: 'Han Jipyeong',
+    profile_pic: require('../assets/profile/jipyeong.jpg'),
+    active: true,
+  },
+  {
+    id: 3,
+    name: 'Soe Dalmi',
+    profile_pic: require('../assets/profile/soedalmi.jpg'),
+    lastSeen: 'Aktif 2 jam yang lalu',
+  },
+  {
+    id: 4,
+    name: 'Nam Dosan',
+    profile_pic: require('../assets/profile/namdosan.jpg'),
+    active: true,
+  },
+  {
+    id: 5,
+    name: 'Soojin Weeekly',
+    profile_pic: require('../assets/profile/soojin.jpg'),
+    lastSeen: 'Aktif 19 menit yang lalu',
+  },
+  {
+    id: 6,
+    name: 'Zoa Weeekly',
+    profile_pic: require('../assets/profile/zoa.jpg'),
+    message: 'Kamu ganteng banget sumpah...',
+  },
+];
+
 export default userData;
