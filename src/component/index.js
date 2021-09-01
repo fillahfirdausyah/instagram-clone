@@ -9,6 +9,10 @@ import UserInfoName from './UserInfoName';
 import HightlightProfile from './HightlightProfile';
 import UserPost from './UserPost';
 
+import HeaderDm from './HeaderDm';
+import SearchDm from './SearchDm';
+import DirectMessage from './DirectMessage';
+
 export {
   Header,
   Stories,
@@ -19,4 +23,7 @@ export {
   UserInfoName,
   HightlightProfile,
   UserPost,
+  HeaderDm,
+  SearchDm,
+  DirectMessage,
 };
