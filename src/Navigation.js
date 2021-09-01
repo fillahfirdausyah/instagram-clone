@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreeen from './screens/Home';
 import ProfileScreen from './screens/Profile';
+import DirectMessageScreen from './screens/DirectMessage';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,11 @@ const Navigation = () => {
           <Stack.Screen
             name="Profile"
             component={ProfileScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="DirectMessage"
+            component={DirectMessageScreen}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
