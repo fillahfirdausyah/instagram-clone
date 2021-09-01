@@ -1,13 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Touchable,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 
-const HeaderDm = () => {
+const HeaderDm = ({ navigation }) => {
   return (
     <View style={styles.headerDmWrapper}>
       <View style={styles.sectionLeft}>
-        <Ionicons name="arrow-back" size={32} />
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Ionicons name="arrow-back" size={32} />
+        </TouchableOpacity>
         <Text style={styles.userName}>firdausyah.22</Text>
       </View>
       <View style={styles.sectionRight}>
