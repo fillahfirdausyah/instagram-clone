@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, StyleSheet, ScrollView} from 'react-native';
-import {Feed, Header, Navbar, Stories} from '../../component';
+import { View, StyleSheet, ScrollView } from 'react-native';
+import { Feed, Header, Navbar, Stories } from '../../component';
 
-const HomeScreeen = ({navigation}) => {
+const HomeScreeen = ({ navigation }) => {
   return (
     <>
       <View style={styles.homeScreenWrapper}>
-        <Header />
+        <Header navigation={navigation} />
         <ScrollView showsVerticalScrollIndicator={false}>
           <Stories />
           <Feed />
